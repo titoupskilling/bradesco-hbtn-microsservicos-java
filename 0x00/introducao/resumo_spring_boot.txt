@@ -1,0 +1,16 @@
+O que é Spring Boot Framework?
+
+Quais são os benefícios e recursos que Spring Boot fornece?
+
+Como é feita a adição de novas dependências (JPA, Hibernate, etc…) ?
+
+Na sua opinião, qual é a melhor IDE para trabalhar com o Spring Boot: Spring Tools Suites, IntelliJ IDEA, Eclipse ou NetBeans ?
+
+O que é Spring Initializr?
+
+Spring Boot Framework é um framework para desenvolvimento de microsserviços.
+Alguns benefícios:
+Inicialização rápida, configuração automática e servidor embutido.
+As dependências podem ser adicionadas atraés do Spring Initializr, maven ou gradle.
+A melhor IDE é o Spring Tools Suites.
+Spring Initializr é uma ferramenta que permite criar projetos Spring Boot com suas dependências.
