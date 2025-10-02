@@ -7,21 +7,22 @@ public class Cliente {
     private String nome;
     private int idade;
     private String email;
-    private Endereco endereco;
+    private List<Endereco> enderecos;
     @OneToMany
     private List<Telefone> telefones;
+    
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
 
     public List<Telefone> getTelefones() {
         return telefones;
     }
     public void setTelefones(List<Telefone> telefones) {
         this.telefones = telefones;
-    }
-    public Endereco getEndereco() {
-        return endereco;
-    }
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
     }
     public int getId() {
         return id;
