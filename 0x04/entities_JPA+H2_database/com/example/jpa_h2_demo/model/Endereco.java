@@ -1,6 +1,8 @@
 @Entity
 public class Endereco {
     @Id
+    @ManyToOne
+    @JoinColumn(enderecos)
     private int id;
     private String logradouro;
     private String endereco;

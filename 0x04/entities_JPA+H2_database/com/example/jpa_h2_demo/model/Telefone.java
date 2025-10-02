@@ -1,6 +1,8 @@
 @Entity
 public class Telefone {
     @Id
+    @ManyToOne
+    @JoinColumn(telefones)
     private int id;
     private String DDD;
     private String telefone;
