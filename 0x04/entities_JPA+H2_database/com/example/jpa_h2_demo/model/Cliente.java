@@ -1,3 +1,5 @@
+import java.util.List;
+
 @Entity
 public class Cliente {
     @Id
@@ -7,13 +9,13 @@ public class Cliente {
     private String email;
     private Endereco endereco;
     @OneToMany
-    private Telefone telefone;
+    private List<Telefone> telefones;
 
-    public Telefone getTelefone() {
-        return telefone;
+    public List<Telefone> getTelefones() {
+        return telefones;
     }
-    public void setTelefone(Telefone telefone) {
-        this.telefone = telefone;
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
     }
     public Endereco getEndereco() {
         return endereco;
