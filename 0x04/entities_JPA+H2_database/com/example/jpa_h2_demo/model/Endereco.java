@@ -1,4 +1,6 @@
+@Entity
 public class Endereco {
+    @Id
     private int id;
     private String logradouro;
     private String endereco;

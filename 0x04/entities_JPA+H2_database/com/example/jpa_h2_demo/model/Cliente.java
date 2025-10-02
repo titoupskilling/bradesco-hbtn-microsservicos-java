@@ -1,9 +1,26 @@
+@Entity
 public class Cliente {
+    @Id
     private int id;
     private String nome;
     private int idade;
     private String email;
-    
+    private Endereco endereco;
+    @OneToMany
+    private Telefone telefone;
+
+    public Telefone getTelefone() {
+        return telefone;
+    }
+    public void setTelefone(Telefone telefone) {
+        this.telefone = telefone;
+    }
+    public Endereco getEndereco() {
+        return endereco;
+    }
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
     public int getId() {
         return id;
     }

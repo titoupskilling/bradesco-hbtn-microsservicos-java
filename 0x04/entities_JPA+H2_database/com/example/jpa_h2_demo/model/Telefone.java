@@ -1,8 +1,10 @@
+@Entity
 public class Telefone {
+    @Id
     private int id;
     private String DDD;
     private String telefone;
-    
+
     public int getId() {
         return id;
     }
