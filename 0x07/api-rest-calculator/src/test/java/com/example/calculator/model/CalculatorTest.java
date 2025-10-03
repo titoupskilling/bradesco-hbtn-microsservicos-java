@@ -1,8 +1,10 @@
+import com.example.calculator.model.Calculator;
+
 public class CalculatorTest {
 
     @Test
     void sumTest() {
-        // TODO
+        Calculator calculator = new Calculator();
     }
 
     @Test
