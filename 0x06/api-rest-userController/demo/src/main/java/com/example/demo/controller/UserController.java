@@ -21,9 +21,9 @@ public String findUserByName(@PathVariable String userName) {
 @GetMapping("/user-cpf/{cpf}")
 public String findUserByCPF(@PathVariable String cpf) {
 
-   String msg = "";
+   String msg = "You have entered valid CPF";
    boolean isCPFValid = isCPF(String CPF);
-   // TODO
+   msg = "You have entered invalid CPF";
    return msg;
 
 }
