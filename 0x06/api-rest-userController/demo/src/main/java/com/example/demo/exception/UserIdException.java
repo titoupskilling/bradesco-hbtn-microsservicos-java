@@ -1,3 +1,3 @@
-public class UserIdException {
+public class UserIdException extends RuntimeException {
     
 }
