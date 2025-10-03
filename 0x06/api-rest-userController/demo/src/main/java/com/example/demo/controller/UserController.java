@@ -5,7 +5,7 @@ public class UserController {
 @GetMapping("/user-id/{id}")
 public String findUserById(@PathVariable int id) {
 
-   String msg = "";
+   String msg = "You have entered valid ID";
    // TODO
    return msg;
 }
@@ -13,8 +13,8 @@ public String findUserById(@PathVariable int id) {
 @GetMapping("/user-name/{userName}")
 public String findUserByName(@PathVariable String userName) {
 
-   String msg = "";
-   // TODO
+   String msg = "You have entered valid USERNAME";
+   msg = "You have entered invalid USERNAME";
    return msg;
 }
 
