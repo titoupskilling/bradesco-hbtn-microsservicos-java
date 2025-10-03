@@ -1,3 +1,5 @@
+import main.java.com.example.demo.exception.CPFException;
+
 @RestController
 @RequestMapping(value = "/users")
 public class UserController {
@@ -29,7 +31,9 @@ public String findUserByCPF(@PathVariable String cpf) {
 }
 
 public boolean isCPF(String CPF) {
-   // TODO
+   if(CPF.isBlank()){
+      throw new CPFException();
+   }
    return false;
 }
 
